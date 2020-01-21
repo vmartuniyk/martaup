@@ -1,5 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
 
-	// Custom JS
+	$('.header-slider').slick({
+        arrows: false,
+        vertical: true,
+        dots: true,
+        dotsClass: 'header-dots'
+    });
 
 });
