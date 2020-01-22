@@ -39,30 +39,30 @@ a
 		left: auto
 		right: auto
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
-
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+//.img-responsive
+//	display: block
+//	max-width: 100%
+//	height: auto
+//
+//.example-grid
+//	display: grid
+//	grid-gap: $gutter
+//	grid-template-columns: 1fr 1fr
+//	grid-template-areas: "left right"
+//	> div:first-child
+//		grid-area: left
+//	> div:last-child
+//		grid-area: right
+//	+media-breakpoint-down(xs)
+//		display: block
+//		> div
+//			padding: $gutter/2 0
+//	
+//.example-img
+//	width: 100%
+//
+//.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+//	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
 .header
     background-image: url('/img/_src/header-bg.jpg')
     min-height: 792px
@@ -135,13 +135,57 @@ a
     margin: 10px 82px 0 0
 .header-dots
     list-style: none
+    position: absolute
+    right: 0
+    top: 50%
     button
         background-color: $white
         opacity: 0.5
         border: none
-        font-size: 0
+        font-size: 0px
         padding: 0
         width: 7px
-        padding: 7px
+        height: 7px
         border-radius: 3.5px;
         cursor: pointer
+        outline: none
+        margin: 10px auto
+        display: block
+        
+.header-dots
+    > .slick-active
+        button
+            width: 15px
+            opacity: 1
+.specialised
+    padding: 55px 0 93px
+    background-image: url('/img/_src/special-bg.svg')
+    background-position: left bottom
+    background-repeat: no-repeat
+    color: #202020
+    text-align: center
+.specialised__title
+    margin-bottom: 96px
+.title
+    font-weight: 700
+    font-size: 35px
+    line-height: 45px
+    text-align: center
+.specialised__items
+    display: flex
+    justify-content: space-between
+    min-width: 980px
+    margin: 0 auto
+.specialised__item
+    width: 280px
+.specialised__item-img
+    margin-bottom: 23px
+    min-height: 159px
+.specialised__item-title
+    margin-bottom: 11px
+    font-size: 20px
+    font-weight: 700
+.specialised__item-text
+    padding: 0 10px
+    color: #272727
+    opacity: 0.7
