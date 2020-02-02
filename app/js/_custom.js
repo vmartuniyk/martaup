@@ -5,7 +5,11 @@ $(function() {
         vertical: true,
         dots: true,
         dotsClass: 'header-dots',
-        autoplay: 3000,
+//        autoplay: 3000,
+    });
+    
+    $('.menu__btn').on('click',function(){
+       $('.menu__list').slideToggle(); 
     });
 
 });

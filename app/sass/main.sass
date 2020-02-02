@@ -138,6 +138,7 @@ a
     position: absolute
     right: 0
     top: 50%
+    
     button
         background-color: $white
         opacity: 0.5
@@ -174,7 +175,7 @@ a
 .specialised__items
     display: flex
     justify-content: space-between
-    min-width: 980px
+    max-width: 980px
     margin: 0 auto
 .specialised__item
     width: 280px
@@ -207,6 +208,10 @@ a
     background-image: url('/img/_src/title-bg-1.svg')
     background-repeat: no-repeat
     background-position: 22px 76px
+.advantages-box--right
+    flex-direction: row-reverse
+    .advantages-box__images
+        order: 1
 .advantages-box--right .advantages-box__info
         background-image: url('/img/_src/title-bg-2.svg')
         background-position: 22px 130px
@@ -272,17 +277,227 @@ a
 .footer___inner
     display: flex
     justify-content: space-between
-    align-items: center
-    height: 61px
     color: #272727
-    padding: 0 40px
+    padding: 20px 40px 17px
 .footer__link a + a
     margin-left: 20px
+
+@media (max-width: 1620px)
+    .advantages
+        background-image: none
+  
     
     
     
+@media (max-width: 1200px)
+    .specialised
+        background-size: 65px
     
+@media (max-width: 1190px)
+    .header-slider__item-images 
+        margin: 50px 20px 0 0
+    .header-slider__item-images 
+        img
+            width: 80%
+    .header-slider__item-info
+        padding: 40px 0
+    .header-slider
+        padding-top: 25px
+    .advantages-box__images
+        text-align: center
+        img
+            width: 80%
+    .advantages-box
+        justify-content: space-around
+    .advantages-box--right
+        .advantages-box__title
+            padding: 30px 0 15px 20px
+        .advantages-box__text
+            padding-left: 20px
+        .advantages-box__info
+            padding-right: 30px
     
+@media (max-width: 1080px)
+    .specialised
+        background-image: none
+    .advantages-box__info
+        padding-top: 10px
+    .advantages-box--right
+        .advantages-box__info
+            padding-right: 10px    
+    .advantages-box__images
+        text-align: center
+        img
+            width: 70%
+            margin-top: 40px
+    .reviews__items
+        flex-wrap: wrap
+    .reviews__item
+        width: 48%
+        margin-bottom: 20px
+            
+@media (max-width: 924px)
+    .header__top
+        flex-wrap: wrap
+    .header-btn
+        width: 100%
+        text-align: right
+    .login
+        margin-right: 30px
+
+@media (max-width: 900px)
+    .header-slider__item-images 
+        display: none
+        
+        
+        
+        
+@media (max-width: 858px)
+     .advantages
+        padding-top: 0
+     .advantages-box__info   
+        max-width: 100%
+     .advantages-box
+        flex-wrap: wrap
+        padding-bottom: 20px
+     .advantages-box--right
+        .advantages-box__images
+            order: 0 
+     .advantages-box__images
+        img 
+            width: 100%
+        
+        
+@media (max-width: 775px)         
+    .specialised
+        padding: 20px 0 40px
+    .specialised__title
+        margin-bottom: 40px
+    .specialised__items
+        flex-wrap: wrap
+    .specialised__item
+        width: 50%
+        margin-bottom: 20px
+        
+@media (max-width: 680px)
+    .reviews__items
+        display: block
+    .reviews__item
+        width: 100%
+        margin-bottom: 20px
+    .reviews
+        padding: 38px 0
+        
+@media (max-width: 620px) 
+    .footer___inner
+        display: block
+        text-align: center
+        padding: 20px 10px 17px
+    .footer__link
+        margin-bottom: 10px
+    
+@media (max-width: 570px)  
+    .menu__list
+        display: none
+        position: absolute
+        top: 120px
+        left: 0
+        text-align: center
+        width: 100%
+        padding: 0
+        background-color: #1b46a4
+        z-index: 5
+    .menu__list 
+        li 
+            padding-left: 0px
+    .menu__list 
+        a
+            display: block
+            padding: 10px 0
+    .menu__btn
+        width: 30px
+        height: 20px
+        position: relative
+    .menu__btn
+        span,
+        &::after,
+        &::before
+            content: ""
+            width: 100%
+            height: 2px
+            background-color: $white
+            position: absolute
+        &::after
+            top: 0
+        &::before
+            bottom: 0
+        span
+            top: 9px
+            width: 70%
+    .header-slider__item-info    
+        padding: 10px 30px 10px 0px
+        
+    .header
+        max-width: 580px
+    .header-slider__description
+        margin-bottom: 30px
+        font-size: 20px
+        line-height: 35px
+    .header-slider__title
+        font-size: 35px
+        line-height: 40px
+    .specialised__items
+        display: block
+    .specialised__item
+        width: 100%
+    .title
+        font-size: 30px
+        line-height: 35px
+    .advantages-box__title
+        font-size: 30px
+        line-height: 40px
+        padding: 68px 0 15px 0
+    .advantages-box__text
+        padding-left: 0
+    .advantages-box--right
+        .advantages-box__title
+            padding: 30px 0 15px 0px;
+        .advantages-box__text
+            padding-left: 0
+    
+        
+@media (min-width: 571px)  
+    .menu__list
+        display: flex!important
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
     
     
     
